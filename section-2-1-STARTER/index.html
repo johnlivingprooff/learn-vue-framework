@@ -5,15 +5,35 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div id="app">
-      {{ firstName }} {{ lastName }}
+    <div id="app" v-cloak>
+      <p>{{ fullName() }}</p>
+      <p><a :href="url" target="_blank">Google</a></p>
+      <p v-html="raw_html"></p>
+      <p>{{ age }}</p>
+      <hr />
+
+      <label for="firstName">First Name</label>
+      <input type="text" v-model="firstName">
+      <label for="firstName">Middle Name</label>
+      <input type="text" :value="middleName" @keyup.enter="updateMiddleName">
+      <label for="lastName">First Name</label>
+      <input type="text" :value="lastName" @input.prevent="updateLastName('Last Name event triggered', $event)">
+      <button type="button" v-on:click="age++">Increase</button>  <!--using 'v-on:' for the listening event-->
+      <button type="button" @click="age--">Decrease</button>    <!--using '@' for the listening event (the shorthand method)-->
     </div>
 
-    <div id="app01">
+    <!-- <div id="app01">
       {{ firstName }} {{ lastName }}
-    </div>
+    </div> -->
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
+
+
+<!--
+  shorthand for v-bind = ':' binding attributes
+  shorthand for v-on = '@' listening events
+  this is a realy nice blue: #5E17EB, contrasts well with this: #F8B41B
+-->
