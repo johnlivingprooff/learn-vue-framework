@@ -15,10 +15,11 @@ This is a simple Vue.js project that serves as a learning foundation for underst
 
 This reflects the progress of the Project on a Daily basis:
 
-- Day 1: Creating Vue instances and mounting them onto HTML elements/tags: [Tweet](https://twitter.com/ola0luwajj/status/1743268556437860694)
-- Day 2: What's a Proxy in Vue, and how it simplifies data access: [Tweet](https://)
+- Day 1: Creating Vue instances and mounting them onto HTML elements/tags: [Thread](https://twitter.com/ola0luwajj/status/1743268556437860694)
+- Day 2: What's a Proxy in Vue, and how it simplifies data access.
 - Day 3: Vue methods, directives, two-way data binding and reactivity.
-- Day 4: Binding Attributes, Outputting RawHTML, Listening to Events, passing on data with events, event modifiers
+- Day 4: Binding Attributes, Outputting RawHTML, Listening to Events, passing on data with events, event modifiers.
+- Day 5: Computed properties, watchers
 
 ## Features
 
@@ -36,4 +37,4 @@ Feel free to use this project as a starting point for learning Vue.js. Experimen
 If you'd like to contribute to this project, feel free to open issues or submit pull requests. Contributions and feedback are welcome!
 
 **Crash Course Video:**
-Time Stamp: `1.20.52 (01/07/2024)`
+Time Stamp: `1.39.16 (01/07/2024)`
