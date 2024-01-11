@@ -8,7 +8,15 @@
 
 <body>
   <div id="app">
-    id
+    <p v-if="mode == 1">Showing v-if directive content</p>
+    <h2 v-else-if="mode == 2">v-else-if directive</h2>
+    <span v-else>v-else directive</span>
+
+    <select v-model="mode">
+      <option value="1">if</option>
+      <option value="2">else-if</option>
+      <option value="3">else</option>
+    </select>
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
