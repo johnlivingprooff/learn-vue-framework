@@ -21,7 +21,7 @@ This reflects the progress of the Project on a Daily basis:
 - Day 4: Binding Attributes, Outputting RawHTML, Listening to Events, passing on data with events, event modifiers.
 - Day 5: Computed properties, watchers
 - Day 6: Binding class & style
-- Day 7: Conditional Rendering
+- Day 7: Conditional Rendering, List rendering
 
 ## Features
 

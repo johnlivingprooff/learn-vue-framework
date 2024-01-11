@@ -16,6 +16,8 @@
     <!--this is because the template tag isn't recognized when HTML is rendered on the browser-->
     <span v-else>v-else directive</span>
 
+    <i v-show="mode == 1">v-show</i> <!--this is better used for frequent toggles-->
+
     <select v-model="mode">
       <option value="1">if</option>
       <option value="2">else-if</option>
