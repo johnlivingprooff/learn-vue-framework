@@ -9,7 +9,11 @@
 <body>
   <div id="app">
     <p v-if="mode == 1">Showing v-if directive content</p>
-    <h2 v-else-if="mode == 2">v-else-if directive</h2>
+    <template v-else-if="mode == 2">
+      <h3>Welcome</h3>
+      <p>v-else-if</p>
+    </template> <!--template is used so that the HTML structure is maintained for css-->
+    <!--this is because the template tag isn't recognized when HTML is rendered on the browser-->
     <span v-else>v-else directive</span>
 
     <select v-model="mode">
