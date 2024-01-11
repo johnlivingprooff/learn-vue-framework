@@ -20,7 +20,9 @@ const vm = Vue.createApp({
             }
         },
         transformed() {
-            
-        }
+	        return {
+	            transform: 'rotate(50deg)',            
+            }
+        },
     },
 }).mount('#app')
