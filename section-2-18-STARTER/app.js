@@ -3,7 +3,7 @@ const vm = Vue.createApp({
         return {
             isPurple: false,
             selectColor: '',
-            size: '',
+            size: '150',
         }
     },
     computed: {
@@ -11,6 +11,16 @@ const vm = Vue.createApp({
             return {
                 purple: this.isPurple
             }
+        },
+        styling() {
+            return {
+                width: this.size + 'px',
+                height: this.size + 'px',
+                lineHeight: this.size + 'px',
+            }
+        },
+        transformed() {
+            
         }
     },
 }).mount('#app')
